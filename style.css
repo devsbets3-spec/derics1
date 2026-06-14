@@ -1,3 +1,158 @@
+/* HEADER */
+.ksf-header{
+    background:#11151c;
+    border-bottom:4px solid #FFD700;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* HEADER CONTAINER */
+.header-container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* LOGO */
+.ksf-logo{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    text-decoration:none;
+}
+
+/* LARGE LOGO IMAGE */
+.ksf-logo img{
+    width:140px;
+    height:140px;
+    object-fit:contain;
+}
+
+/* TEXT WRAPPER */
+.logo-text{
+    display:flex;
+    flex-direction:column;
+}
+
+/* GWM */
+.logo-symbol{
+    color:#FFD700;
+    font-size:2.5rem;
+    font-weight:900;
+    line-height:1;
+    text-shadow:0 0 15px rgba(255,215,0,.6);
+}
+
+/* MINISTRY NAME */
+.logo-name{
+    color:#FFD700;
+    font-size:2rem;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    line-height:1.2;
+    text-shadow:0 0 10px rgba(255,215,0,.4);
+}
+
+/* NAVIGATION */
+.ksf-nav{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.ksf-nav a{
+    color:white;
+    text-decoration:none;
+    font-size:1rem;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.ksf-nav a:hover{
+    color:#FFD700;
+}
+
+/* SOCIAL ICONS */
+.nav-social-cluster{
+    display:flex;
+    gap:15px;
+}
+
+.nav-social-link{
+    font-size:1.3rem;
+}
+
+/* BUTTON */
+.support-btn{
+    background:#FFD700;
+    color:#11151c;
+    border:none;
+    padding:12px 22px;
+    border-radius:5px;
+    font-weight:800;
+    cursor:pointer;
+}
+
+.support-btn:hover{
+    background:#e6c200;
+}
+
+/* TABLET */
+@media(max-width:992px){
+
+    .ksf-logo img{
+        width:100px;
+        height:100px;
+    }
+
+    .logo-symbol{
+        font-size:2rem;
+    }
+
+    .logo-name{
+        font-size:1.4rem;
+    }
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .header-container{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .ksf-logo{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .ksf-logo img{
+        width:200px;
+        height:200px;
+    }
+
+    .logo-symbol{
+        font-size:1.6rem;
+    }
+
+    .logo-name{
+        font-size:1rem;
+        letter-spacing:1px;
+    }
+
+    .ksf-nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+}
 :root {
     --ksf-gold: #cca43b;
     --ksf-gold-hover: #b08d2e;
@@ -32,36 +187,10 @@ body { font-family: var(--ksf-font-stack); background-color: var(--ksf-pure-whit
 
 .ksf-header { background-color: var(--ksf-dark-base); border-bottom: 2px solid var(--ksf-gold); position: sticky; top: 0; z-index: 1000; padding: 15px 0; }
 .header-container { width: 90%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-.ksf-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: var(--ksf-pure-white);
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-}
 
-.ksf-logo img {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
+   
 
-/* Mobile */
-@media (max-width: 768px) {
-    .ksf-logo img {
-        width: 50px;
-        height: 50px;
-    }
 
-    .ksf-logo {
-        font-size: 0.8rem;
-        gap: 8px;
-    }
-}
 .ksf-nav { display: flex; align-items: center; gap: 22px; }
 .ksf-nav a { color: #d1d5db; text-decoration: none; font-size: 0.92rem; font-weight: 600; text-transform: uppercase; transition: var(--ksf-transition); }
 .ksf-nav a:hover { color: var(--ksf-gold); }
