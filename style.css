@@ -16,6 +16,7 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
+    height: 100px;
 }
 
 /* LOGO */
@@ -51,11 +52,11 @@
 /* MINISTRY NAME */
 .logo-name{
     color:#FFD700;
-    font-size:2rem;
+    font-size:1rem;
     font-weight:900;
     text-transform:uppercase;
     letter-spacing:2px;
-    line-height:1.2;
+    line-height:1;
     text-shadow:0 0 10px rgba(255,215,0,.4);
 }
 
@@ -135,7 +136,7 @@
 
     .ksf-logo img{
         width:200px;
-        height:200px;
+        height:120px;
     }
 
     .logo-symbol{
