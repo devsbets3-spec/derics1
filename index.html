@@ -241,12 +241,30 @@
             </div>
 
             <div class="cathedral-nodes-grid mt-big">
-                <a href="#campuses" onclick="openModal('modal-campus-kariene')" class="cathedral-node-card" style="text-decoration: none; color: inherit; display: block;">
-                    <div class="node-icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                    <h3>Kariene Center</h3>
-                    <p class="located at meru town along meru-nkubu road">Meru, Kenya</p>
-                    <span style="display: inline-block; font-size: 0.7rem; color: #b89535; font-weight: 700; text-transform: uppercase; margin-top: 10px;">Connect <i class="fa-solid fa-chevron-right"></i></span>
+             <div id="modal-campus-kariene" class="ksf-modal-overlay-backdrop">
+    <div class="ksf-modal-window" style="max-width: 500px;">
+        <span class="ksf-modal-dismiss" onclick="closeModal('modal-campus-kariene')">&times;</span>
+        <h3 class="modal-title-header"><i class="fa-solid fa-location-dot text-gold"></i> Kariene Center</h3>
+        
+        <div class="modal-scrollable-body" style="text-align: left;">
+            <p style="margin-bottom: 15px;"><strong>Location:</strong> Meru, Kenya (Along Meru-Nkubu Road).</p>
+            
+            <h4 style="margin-top: 20px; color: var(--ksf-gold);">Weekly Service Schedule</h4>
+            <ul style="list-style: none; padding: 0; line-height: 2;">
+                <li><i class="fa-solid fa-calendar-days"></i> <strong>Sunday Service:</strong> 9:00 AM – 12:30 PM</li>
+                <li><i class="fa-solid fa-clock"></i> <strong>Mid-week Prayers:</strong> Wednesdays, 5:00 PM</li>
+                <li><i class="fa-solid fa-people-group"></i> <strong>Fellowship:</strong> Fridays, 5:00 PM</li>
+            </ul>
+
+            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #eee;">
+                <p><strong>Need Assistance?</strong></p>
+                <a href="tel:+254119588619" class="btn-ksf-gold" style="display: block; text-align: center; text-decoration: none; padding: 10px;">
+                    <i class="fa-solid fa-phone"></i> Call: 0119588619
                 </a>
+            </div>
+        </div>
+    </div>
+</div>
                 <a href="#campuses" onclick="openModal('modal-campus-maua')" class="cathedral-node-card" style="text-decoration: none; color: inherit; display: block;">
                     <div class="node-icon-box"><i class="fa-solid fa-location-dot"></i></div>
                     <h3>Maua Center</h3>
