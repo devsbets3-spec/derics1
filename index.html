@@ -552,7 +552,7 @@
 
     <div id="modal-events" class="ksf-modal-overlay-backdrop">
         <div class="ksf-modal-window">
-            <span class="ksf-modal-dismiss" onclick="closeModal('modal-events')">&times;</span>
+            <span class="ksf-modal-dismiss" onclick="closeModal('modal-events')"></span>
             <h3 class="modal-title-header"><i class="fa-solid fa-calendar"></i> Scheduled Operations</h3>
             <div class="modal-scrollable-body">
                 <div class="info-packet" style="margin-bottom: 12px;">
@@ -569,7 +569,7 @@
 
     <div id="modal-donation" class="ksf-modal-overlay-backdrop">
         <div class="ksf-modal-window">
-            <span class="ksf-modal-dismiss" onclick="closeModal('modal-donation')">&times;</span>
+            <span class="ksf-modal-dismiss" onclick="closeModal('modal-donation')</span>
             <h3 class="modal-title-header">💝 Financial Partnerships</h3>
             <section id="give">
         <h2>Financial Support</h2>
@@ -598,7 +598,23 @@
 
     <!-- Ensure your Modal Scripts are included here -->
     <script src="script.js"></script>
-</body>
-</html>
+    <!-- ... all your page sections above ... -->
+
+    </section> <!-- End of the last section -->
+
+    <!-- PLACE MODALS HERE: Outside all other sections, right before </body> -->
+    <div id="modal-events" class="ksf-modal-overlay-backdrop">
+        <div class="ksf-modal-window">
+            <h3>2026 Ministry Calendar</h3>
+            <button onclick="closeModal('modal-events')">Close</button>
+            <ul>
+                <li> Miracle and healing service: 1st Weekend of every month </li>
+                <li> August 2026: Kenyan Mission </li>
+                <!-- ... rest of your items -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
